@@ -1,0 +1,38 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>纸牌游戏</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div id="game-container">
+    <h1>纸牌游戏</h1>
+    <div id="lobby">
+      <p>请输入您的名字：</p>
+      <input type="text" id="playerName" placeholder="名字">
+      <button id="joinBtn">加入游戏</button>
+      <div id="playerList"></div>
+      <div id="hostControls" style="display:none;">
+        <button id="startGameBtn">开始游戏（房主）</button>
+      </div>
+      <button id="readyBtn" style="display:none;">准备</button>
+    </div>
+    <div id="gameArea" style="display:none;">
+      <div id="gameInfo"></div>
+      <div id="cardsArea"></div>
+      <div id="actions">
+        <input type="text" id="declaredNumber" placeholder="指定数字">
+        <input type="text" id="cardCount" placeholder="出牌数量 (1-3)">
+        <button id="declareBtn">指定数字并出牌</button>
+        <button id="challengeBtn">质疑</button>
+        <button id="passBtn">过牌</button>
+      </div>
+      <div id="resultArea"></div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
