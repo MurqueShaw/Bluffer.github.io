@@ -1,0 +1,29 @@
+/* public/style.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+#game-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+input {
+  padding: 8px;
+  margin: 5px;
+}
+button {
+  padding: 10px 20px;
+  margin: 5px;
+}
+#cardsArea {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 80px;
+}
